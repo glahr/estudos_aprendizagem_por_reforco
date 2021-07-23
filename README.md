@@ -1,1 +1,2 @@
-# estudos_aprendizagem_por_reforco
+# Estudos aprendizagem por reforco
+## Introducao
