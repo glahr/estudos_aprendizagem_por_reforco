@@ -15,15 +15,16 @@
 ## Motivação
 <p align="left">Levando em consideração o contexto motivacional, tem-se abaixo o Nybble - um gato robô realista desenvolvido pela Companhia “Petoi” - capaz de correr, andar, equilibrar-se igual a um animal de verdade e, ainda, executar incríveis truques programáveis. Além de ser um projeto inovador e exploratório no sentido tecnológico, o gato Nybble é uma forma lúdica e divertida de se explorar e estudar Reinforcement Learning.</p>
 
-| ![nybble.jpg](https://www.thisiscolossal.com/wp-content/uploads/2019/04/Nybble_03.jpg) | 
-|:--:| 
+| Nybble | Nybble em movimento |
+| ------------ | ------------- |
+| <img src="https://www.thisiscolossal.com/wp-content/uploads/2019/04/Nybble_03.jpg" width="500"> | <img src="https://www.thisiscolossal.com/wp-content/uploads/2019/04/nybble-2.gif" width="500">|
 | Fonte: Página Colossal.
 Disponível em <https://www.thisiscolossal.com/2019/04/nybble/>. Acesso em: 09 fev. 2021. |
 
-| ![nybbleGif.jpg](https://www.thisiscolossal.com/wp-content/uploads/2019/04/nybble-2.gif) | 
-|:--:| 
-| Fonte: Página Colossal.
-Disponível em <https://www.thisiscolossal.com/2019/04/nybble/>. Acesso em: 09 fev. 2021. |
+## Entendendo RL
+<p align="left">Para uma compreensão geral do funcionamento de um algoritmo de RL, é necessário entender os principais conceitos que o envolvem. Entre eles, têm-se o agente, a recompensa, a ação, o ambiente e o estado. Basicamente, a relação prática e teórica de todos esses conceitos leva ao objetivo final do RL: fazer um objeto (agente), seja ele físico ou virtual aprender a fazer algo (tarefas humanas). O agente aprende por meio da interação com o ambiente, sem um conhecimento prévio do que deve realizar. As recompensas (r:(S × A) → R) , as quais podem ser  positivas ou negativas, são “feedbacks” do ambiente sobre o comportamento do agente. A ideia geral de um algoritmo de RL é fazer com que essas recompensas sejam maximizadas, ou seja, quanto maior for a recompensa de determinada ação, melhor a ação tomada é para o aprendizado. Já o ambiente pode ser um ambiente real ou um ambiente de simulação. O agente deve estar preparado para um ambiente de constantes mudanças, não para um ambiente estagnado.</p>
+
+>“ _Aprendizado por reforço é uma abordagem computacional para entender e automatizar o aprendizado direcionado a objetivos e tomada de decisão. É distinguido de outras abordagens computacionais pela ênfase no aprendizado de um agente pela interação direta com o ambiente, sem depender de uma supervisão exemplar ou completar modelos de ambientes_” (Richard S. Sutton and Andrew G. Barto, 2015, p.29).
 
 
 ```python
