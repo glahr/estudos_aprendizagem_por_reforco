@@ -30,3 +30,5 @@ Disponível em <https://www.thisiscolossal.com/2019/04/nybble/>. Acesso em: 09 f
 ```python
 import numpy as np 
 ```
+
+<img src="https://render.githubusercontent.com/render/math?math=Q(s,a) = Q(s,a) + [R(s',a) + maxa' Q'(s',a') - Q(s,a)]">
