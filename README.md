@@ -31,4 +31,4 @@ Disponível em <https://www.thisiscolossal.com/2019/04/nybble/>. Acesso em: 09 f
 import numpy as np 
 ```
 
-<img src="https://render.githubusercontent.com/render/math?math=Q(s,a) = Q(s,a) + [R(s',a) + maxa' Q'(s',a') - Q(s,a)]">
+<img src="https://render.githubusercontent.com/render/math?math=Q(s,a) = Q(s,a) + \alpha [R(s',a) + \gamma max_{a'} Q'(s',a') - Q(s,a)]">
