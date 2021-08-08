@@ -1,3 +1,7 @@
+<h4 align="center"> 
+	🚧  Estudos em Aprendizagem por Reforço 🚀 Em construção...  🚧
+</h4>
+
 # Estudos Aprendizagem por Reforço
 <p align="center">
  <a href="#introducao">Introdução</a> •
@@ -31,9 +35,39 @@ Disponível em < https://openai.com/blog/solving-rubiks-cube/ >. Acesso em: 27 f
 
 >“ _Aprendizado por reforço é uma abordagem computacional para entender e automatizar o aprendizado direcionado a objetivos e tomada de decisão. É distinguido de outras abordagens computacionais pela ênfase no aprendizado de um agente pela interação direta com o ambiente, sem depender de uma supervisão exemplar ou completar modelos de ambientes_” (Richard S. Sutton and Andrew G. Barto, 2015, p.29).
 
+![Aprendizado por reforço](https://github.com/glahr/estudos_aprendizagem_por_reforco/blob/main/aprendizado%20por%20reforco.png?raw=true)
+
+#### Simbologia:
+
+:small_orange_diamond: s → estado<br />
+:small_orange_diamond: a →  ação<br />
+:small_orange_diamond: S → conjunto de todos os estados não terminais<br />
+:small_orange_diamond: S+ →  conjunto de todos os estados, incluindo o estado terminal<br />
+:small_orange_diamond: A(s) →  conjunto de ações para o estado s<br />
+:small_orange_diamond: R →  conjunto de possíveis recompensas<br />
+:small_orange_diamond: 𝑦 → desconto<br />
+
+<p align="justify">Durante o  funcionamento de um algoritmo de Reinforcement Learning,  o agente encontra-se em um certo estado. Em seguida, realiza uma determinada ação, passando a outro estado. Por fim, recebe uma recompensa. O objetivo é maximizar o conjunto de tais recompensas, para que o agente tenha resultados melhores e mais próximos o possível do esperado. Pode-se dizer que, a princípio, os testes realizados com o agente devem “falhar”, com o propósito de que o agente identifique o que não se deve fazer e, assim, obter resultados futuros mais precisos e eficientes. Basicamente, o agente irá aprender com seus erros e acertos, assim como um ser humano durante toda a sua vida. Uma equação que podemos utilizar para lidar com a modelagem em aprendizado por reforço é a chamada equação de Bellman, vamos verificar na próxima seção.</p>
+
+## Processo de decisão de Markov e Equação de Bellman
+
+<p align="justify">Em Aprendizado por Reforço, o processo que normalmente sustenta a aplicação é o Processo de decisão de Markov (Markov decision process - MDP), o qual é caracterizado pela estocasticidade. O processo consiste em um conjunto de estados, ações, modelo de transição e recompensas, representando por: <T,S,,A,R(s)>, em que T - P(s’| s,a) - é a probabilidade de dado agente mover para o estado s’ de s executando determinada ação a. Para auxiliar tal processo de decisão, é utilizada a equação de Bellman.
+Contextualizando, Richard Ernest Bellman foi um grande contribuidor no ramo da matemática e da computação devido à invenção da programação dinâmica. Sua equação tem grande importância, no sentido de otimização de valores em uma função.
+A seguir, temos a equação (1) - representa a relação de um valor de estado e dos valores de estados sucessores - e a equação (2), em que é calculado o valor representante de tomar determinada ação a em um estado s, sob uma política pi : </p>
+
+
+<img src="https://render.githubusercontent.com/render/math?math=Q(s,a) = Q(s,a) + \alpha [R(s',a)+\gamma max_{a'} Q'(s',a') - Q(s,a)]">
+
+
+
+### Pré-requisitos
+<p align="justify">Antes de começar, você vai precisar ter instalado em sua máquina as seguintes...</p>
+
+
+
+
 
 ```python
 import numpy as np 
 ```
 
-<img src="https://render.githubusercontent.com/render/math?math=Q(s,a) = Q(s,a) + \alpha [R(s',a)+\gamma max_{a'} Q'(s',a') - Q(s,a)]">
