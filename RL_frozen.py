@@ -84,12 +84,32 @@ for episode in range(train_episodes):
 
 print ("Training score over time: " + str(sum(training_rewards)/train_episodes))
 
+N = 500
+cumsum, moving_aves = [0], []
+
+for i, x in enumerate(training_rewards, 1):
+    cumsum.append(cumsum[i-1] + x)
+    if i>=N:
+        moving_ave = (cumsum[i] - cumsum[i-N])/N
+        #can do stuff with moving_ave here
+        moving_aves.append(moving_ave)
+
 #Visualizing results and total reward over all episodes
+# ORIGINAL
 x = range(train_episodes)
 plt.plot(x, training_rewards)
 plt.xlabel('Episode')
 plt.ylabel('Training total reward')
 plt.title('Total rewards over all episodes in training') 
+plt.show()
+
+#Visualizing results and total reward over all episodes
+# MOVING AVERAGE
+x = range(train_episodes)
+plt.plot(moving_aves)
+plt.xlabel('Episode')
+plt.ylabel('Training total reward')
+plt.title('Total rewards over all episodes in training')
 plt.show()
 
 #Visualizing the epsilons over all episodes
